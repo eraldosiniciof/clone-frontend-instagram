@@ -3,7 +3,6 @@
   font-size: 0.9rem;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   text-decoration: none;
 }
 
@@ -15,7 +14,7 @@ input {
   margin-bottom: 20px;
 }
 
-#logo {
+.logo {
   margin-bottom: 30px;
 }
 
@@ -27,19 +26,19 @@ input {
   margin-bottom: 10px;
 }
 
-#content {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
 
   height: 100vh;
-  width: 100%;
-  padding: 10px;
+  width: 100vw;
+  /* padding: 10px; */
 
   background-color: rgb(248, 248, 248);
 }
 
-#button {
+.button {
   background-color: rgb(0, 60, 255);
   color: white;
   font-weight: bold;
@@ -47,28 +46,30 @@ input {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 80%;
   padding: 10px;
 }
 
-#options {
-  height: 100%;
-  width: 350px;
+.options {
+  height: 100vh;
+  width: 300px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#phone {
+.phone {
   padding: 0;
   margin: 0;
   display: flex;
-  width: 350px;
+  align-items: center;
+  width: 300px;
+  height: 100vh;
 }
 
-#forms {
+.forms {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,11 +82,11 @@ p {
   margin: 6px;
 }
 
-#apps {
+.apps {
   text-align: center;
 }
 
-#links {
+.links {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -95,4 +96,10 @@ p {
   cursor: pointer;
   width: 45%;
   height: 10%;
+}
+
+@media (max-width: 500px) {
+  .phone {
+    display: none;
+  }
 }
